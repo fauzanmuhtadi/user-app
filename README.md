@@ -1,46 +1,102 @@
-# Getting Started with Create React App
+# User Management Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This is a simple user management application built using React and TypeScript. The application displays a list of users fetched from a JSON API and allows you to view user details in a modal. Additionally, you can add, edit, and delete users. The application is styled using Tailwind CSS and is fully responsive. State management is handled using MobX, and unit tests are written with React Testing Library. The code follows best practices with ESLint and Prettier configurations.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+1. **User Interface**: Built using React with Tailwind CSS for styling.
+2. **Responsive Design**: Works on both desktop and mobile devices.
+3. **Data Fetching**: Fetches JSON data from a REST API endpoint.
+4. **State Management**: Centralized state management using MobX.
+5. **CRUD Operations**: Add, edit, and delete users.
+6. **Code Quality**: Configured with ESLint and Prettier for code quality and formatting.
+7. **TypeScript**: Utilizes TypeScript with models, types, and interfaces.
+8. **Unit Testing**: Performed with React Testing Library.
+9. **README**: Detailed instructions and information provided.
+10. **Deployment**: Application is deployed for live demo.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Instructions
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- Node.js
+- npm or yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/fauzanmuhtadi/user-app.git
+   cd user-app
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Running the Application
 
-### `npm run eject`
+1. Start the development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Open your browser and navigate to `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Running Tests
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Run unit tests:
+   ```bash
+   npm test
+   # or
+   yarn test
+   ```
 
-## Learn More
+### Building the Application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Build the application for production:
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Formatting code by Prettier
+
+1. Formatting:
+   ```bash
+   npm run format
+   # or
+   yarn format
+   ```
+
+### Ejecting the Application
+
+1. Ejecting:
+
+   ```bash
+   npm run eject
+   # or
+   yarn eject
+   ```
+
+   **Note**: This action is irreversible. Ejecting the application will expose the configuration files (like Webpack, Babel, etc.) that are hidden by default in `create-react-app`. This allows for more customization but increases the complexity of managing the configuration. Only eject if you need to add custom configurations that are not supported by `create-react-app` out of the box.
+
+### Deployment
+
+The application is deployed and can be accessed at [Live Demo](https://fauzanmuhtadi.github.io/user-app).
+
+## Additional Information
+
+- **State Management**: This application uses MobX for state management. The state includes the user list and selected user details.
+- **CRUD Operations**: The add, edit, and delete operations are implemented by updating the MobX state. These changes are immediately reflected in the UI.
+- **Profile Pictures**: Random images from [Picsum](https://picsum.photos) are used as user profile pictures.
