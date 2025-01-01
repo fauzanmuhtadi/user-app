@@ -134,7 +134,7 @@ const App = observer(() => {
 
   return (
     <MobXProvider store={rootStore}>
-      <div className="container mx-auto p-4">
+      <div style={{backgroundColor: 'GrayText'}} className="container mx-auto p-4">
         <Modal isOpen={globalStore.modalConfirmation}>
           <h1 className="font-bold text-center text-xl mb-4">Are you sure?</h1>
           <p className="text-center mb-4">Do you want to delete this user?</p>
